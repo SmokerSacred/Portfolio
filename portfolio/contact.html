@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/093cf2a000.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts page</title>
+</head>
+
+<body>
+    <section class="Navbar">
+        <nav>
+            <div class="webname">
+                <h1>
+                    MyContact
+                </h1>
+            </div>
+            <ul>
+                <li><a href="#home"><a href="/main.html"><i class="fa-solid fa-house-chimney"></i><span
+                                class="vis">Home</span></a></a>
+                </li>
+                <li><a href="#myWorks"><a href="/project.html"><i class="fa-solid fa-laptop-code"></i><span
+                                class="vis">Projects</span></a></a></li>
+                <li><a href="#contactMe"><a href="/contact.html"><i class="fa-solid fa-phone"></i><span
+                                class="vis">Contact</span></a></a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="background">
+        <div class="container">
+            <div class="screen">
+                <div class="screen-body">
+                    <div class="screen-body-item left">
+                        <div class="app-title">
+                            <span>CONTACT</span>
+                            <span>ME</span>
+                        </div>
+                        <div class="app-contact">CONTACT INFO : 0701893762</div>
+                    </div>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+
+                            <form action="contact.php" method="POST">
+                                <div class="app-form-group">
+                                    <input name="name" class="app-form-control" placeholder="NAME" required>
+                                </div>
+                                <div class="app-form-group">
+                                    <input name="email" class="app-form-control" type="email" placeholder="EMAIL"
+                                        required>
+                                </div>
+                                <div class="app-form-group">
+                                    <input name="subject" class="app-form-control" placeholder="subject" required>
+                                </div>
+                                <div class="app-form-group message">
+                                    <textarea name="message" rows="1" class="app-form-control" placeholder="MESSAGE"
+                                        required></textarea>
+                                </div>
+                                <div class="app-form-group buttons">
+                                    <button class="app-form-button">CANCEL</button>
+                                    <button class="app-form-button">SEND</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

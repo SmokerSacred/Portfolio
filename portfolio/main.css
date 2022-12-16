@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Kanit:wght@800&family=Stick+No+Bills:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(/wp7453607-portfolio-wallpapers.png);
+  background-color: pink;
+}
+
+/*Navbar*/
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  display: inherit;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li a {
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: large;
+  text-decoration: none;
+  position: static;
+}
+
+li a:hover {
+  color: white;
+  text-decoration-line: underline;
+}
+
+li i {
+  color: black;
+  padding-right: 4px;
+}
+li i:hover {
+  color: white;
+}
+
+.webname {
+  font-family: sans-serif;
+  color: black;
+}
+
+/*Home*/
+.home h1 {
+  color: black;
+  text-align: center;
+  padding-top: 5rem;
+  margin-left: 6rem;
+  font-family: "Kanit", sans-serif;
+}
+
+.home p {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.home button {
+  background-color: transparent;
+  color: black;
+  border-width: 1px;
+  border-radius: 0.8rem;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+.home .button {
+  text-align: center;
+  margin-top: .2rem;
+}
+
+.home button:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+/*work*/
+.work{
+  margin: 0px;
+  height: 73vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.card-groups,
+.card-group,
+.card{
+  aspect-ratio: 5 / 7;
+}
+
+.card-groups,
+.card-group,
+.big-card{
+  width: 30vmin;
+}
+
+.card-group{
+  position: absolute;
+  transition: transform 400ms ease;
+}
+
+.card-group[data-status="unknown"]{
+  transform: scale(0);
+  transition: none;
+}
+
+.card-group[data-status="active"]{
+  transition-delay: 300ms;
+}
+
+.card-group[data-status="after"]{
+  transform: translateX(50%) scale(0);
+}
+
+.card-group[data-status="before"]{
+  transform: translateX(-50%) scale(0);
+}
+
+.card-group[data-status="becoming-active-from-after"]{
+  transform: translateX(50%) scale(0);
+  transition: none;
+}
+
+.card-group[data-status="becoming-active-from-before"]{
+  transform: translateX(-50%) scale(0);
+  transition: none;
+}
+
+.card{
+  border-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+
+  background-position: center;
+  background-size: cover;
+}
+
+.big-card{
+  border-radius: 1vmin;
+}
+
+.little-card{
+  width: 12vmin;
+  border-radius: 2vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+  box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.big-card:nth-child(2){
+  background-image: url(https://images.unsplash.com/photo-1663545284588-fe330c9ccb20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+  transform: translate(-10%) rotate(-1deg);
+}
+
+.big-card:nth-child(4){
+  background-image: url(https://images.unsplash.com/photo-1659161071276-c2020910dbb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  transform: rotate(2deg);
+}
+
+.big-card:nth-child(6){
+  background-image: url(https://images.unsplash.com/photo-1665237814256-16b9e0f697dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+  transform: translate(-6%) rotate(-3deg);
+}
+
+.big-card:nth-child(8){
+  background-image: url(https://images.unsplash.com/photo-1664975872627-9ceab3dcb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80);
+  transform: translate(10%, 3%) rotate(5deg);
+}
+
+.card-group[data-index="1"] > .big-card:nth-child(6){
+    background-image: url(https://images.unsplash.com/photo-1663545284588-fe330c9ccb20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80);
+}
+
+.card-group[data-index="1"] > .big-card:nth-child(8){
+  background-image: url(https://images.unsplash.com/photo-1659161071276-c2020910dbb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(4){
+    background-image: url(https://images.unsplash.com/photo-1665237814256-16b9e0f697dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+}
+
+.card-group[data-index="2"] > .big-card:nth-child(8){
+  background-image: url(https://images.unsplash.com/photo-1583118665514-777703eafdaa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80);
+}
+
+.little-card:nth-child(1){
+  background-image: url(https://images.unsplash.com/photo-1666624833558-3da1b3aeef70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+}
+
+.little-card:nth-child(3){
+  background-image: url(https://images.unsplash.com/photo-1666624832822-70a3a0eb4e88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+
+.little-card:nth-child(5){
+  background-image: url(https://images.unsplash.com/photo-1662499840616-f68c556abf3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.little-card:nth-child(7){
+  background-image: url(https://images.unsplash.com/photo-1662499840736-0178ce197a70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+.card-group:hover > .card{
+  box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+
+.card-group:hover > .big-card:nth-child(2){
+  transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-group:hover > .big-card:nth-child(4){
+  transform: translate(-25%, 8%) rotate(-8deg);
+}
+
+.card-group:hover > .big-card:nth-child(6){
+  transform: translate(25%, 8%) rotate(8deg);
+}
+
+.card-group:hover > .big-card:nth-child(8){
+  transform: translate(75%, 16%) rotate(24deg);
+}
+
+.card-group:hover > .little-card:nth-child(1){
+  transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.card-group:hover > .little-card:nth-child(3){
+  transform: translate(160%, 170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(5){
+  transform: translate(-200%, -170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(7){
+  transform: translate(-280%, 140%) rotate(-15deg);
+}
+
+.card-swiper-buttons{
+  margin-top: 8vmin;
+  display: flex;
+  justify-content: space-around;
+  padding: 0vmin 4vmin;
+}
+
+.card-swiper-buttons >  button {
+  font-size: 2.5vmin;
+  border: 0.4vmin solid #001;
+  border-radius: 100%;
+  color: black;
+  background-color: transparent;
+  height: 7vmin;
+  width: 7vmin;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+#love-button{
+  color: rgb(33, 150, 243);
+  border-color: rgb(33, 150, 243);
+}
+
+@media screen and (max-width: 600px){
+  nav{
+    font-size: 0px;
+  }
+
+  ul li {
+    padding-left: 1rem;
+    padding-right: 1.4rem;
+  }
+
+.home h1{
+  margin-left: 0;
+  font-size: 25px;
+  
+}
+
+.home p{
+  margin-top: 1rem;
+  font-size: 25px;
+}
+
+.work{
+  height: 25rem;
+
+}
+}
+

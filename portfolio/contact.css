@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Kanit:wght@800&family=Stick+No+Bills:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(/wp7453607-portfolio-wallpapers.png);
+  background-color: pink;
+}
+
+/*Navbar*/
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+
+nav ul {
+  display: inherit;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li a {
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: large;
+  text-decoration: none;
+  position: static;
+}
+
+li a:hover {
+  color: white;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+li i {
+  color: black;
+  padding-right: 4px;
+}
+
+li i:hover {
+  color: white;
+}
+
+.webname {
+  font-family: sans-serif;
+  color: black;
+}
+
+/*bod*/
+*,
+*:before,
+*:after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.background,
+button,
+input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 10px;
+  color: #555;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+  word-spacing: 1rem;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #000;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    font-size: 0px;
+  }
+
+  ul li {
+    padding-left: 1rem;
+    padding-right: 1.4rem;
+  }
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+.thank {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-top: 2rem;
+
+}
+
+.back{
+  text-align: center;
+  font-family: "Cinzel", serif;
+  margin-top: 2rem;
+
+}
+.lin{
+  color: #b9134f;
+}
+

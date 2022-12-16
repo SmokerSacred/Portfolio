@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Kanit:wght@800&family=Stick+No+Bills:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(/wp7453607-portfolio-wallpapers.png);
+  background-color: pink;
+}
+
+/*Navbar*/
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  z-index: 999;
+}
+
+nav ul {
+  display: inherit;
+}
+
+ul li {
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1.2rem;
+}
+
+li a {
+  color: black;
+  font-family: "Cinzel", serif;
+  font-size: large;
+  text-decoration: none;
+  position: static;
+}
+
+li a:hover {
+  color: white;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+li i {
+  color: black;
+  padding-right: 4px;
+}
+
+li i:hover {
+  color: white;
+}
+
+.webname {
+  font-family: sans-serif;
+  color: black;
+}
+
+/*projects*/
+.text {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+
+#cards {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3em;
+  padding: 2rem;
+}
+
+.card {
+  background-color: white;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.card > h1,
+p {
+  visibility: hidden;
+}
+
+.one {
+  background-image: url(https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+.two {
+  background-image: url(https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+.three {
+  background-image: url(https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+.four {
+  background-image: url(https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+.five {
+  background-image: url(https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+.six {
+  background-image: url(https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    font-size: 0px;
+  }
+
+  ul li {
+    padding-left: 1rem;
+    padding-right: 1.4rem;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+
+  #cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
+  #cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
